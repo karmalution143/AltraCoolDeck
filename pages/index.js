@@ -3,16 +3,25 @@ import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import Footer from '../components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import SEO from '../components/SEO'
+import ReviewCarousel from '../components/ReviewCarousel';
 
 export default function Home() {
 
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
-  }, []);
+  const [reviews, setReviews] = useState([]);
+
+useEffect(() => {
+  AOS.init({ duration: 1000, once: true });
+
+  // Fetch reviews from your API
+  fetch('/api/reviews')
+    .then((res) => res.json())
+    .then((data) => setReviews(data))
+    .catch((err) => console.error('Failed to load reviews:', err));
+}, []);
 
   return (
       <>
@@ -71,6 +80,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      {/* Google Reviews Section */}
+      <ReviewCarousel reviews={reviews} />
 
       {/* Services Section */}
       <section className="services py-5">

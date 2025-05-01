@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO'
 
 export default function About() {
   return (
@@ -11,6 +12,20 @@ export default function About() {
         image="https://altra-cool-deck.vercel.app/link_preview.jpg"
         url="https://altra-cool-deck.vercel.app/"
       />
+
+      {/* Hero Section */}
+      <section className="hero text-white text-center d-flex align-items-center justify-content-center" style={{ 
+        backgroundImage: "url('/link_preview.jpeg')", 
+        backgroundSize: 'cover', 
+        backgroundPosition: 'center', 
+        height: '75vh' 
+      }}>
+        <div>
+          <h1 className="display-3 fw-bold">About Us</h1>
+          <h2><a href="tel:4803664499">(480) 366-4499</a></h2>
+        </div>
+      </section>
+
     <div>
       <section className="bg-primary text-white text-center py-5">
         <div className="container d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
