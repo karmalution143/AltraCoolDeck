@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import SEO from '../components/SEO'
 
 export default function Home() {
 
@@ -14,65 +15,62 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
-      <Head>
-        <title>Altra Cool Deck | Pool Deck Resurfacing & Repair</title>
-        <meta name="description" content="Specializing in pool deck resurfacing and concrete services in Phoenix, AZ." />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <>
+      <SEO/>
+      <div>
 
       {/* Hero Section */}
-<section className="hero text-white text-center d-flex align-items-center justify-content-center" style={{ 
-  backgroundImage: "url('/deck_cover.jpeg')", 
-  backgroundSize: 'cover', 
-  backgroundPosition: 'center', 
-  height: '75vh' 
-}}>
-  <div>
-    <h1 className="display-3 fw-bold">Make Your Pool Deck Beautiful Again</h1>
-    <p className="lead">Serving Phoenix and Surrounding Areas – ROC #302336 #328149</p>
-    <p className="mb-3">Fix The Damage · Enjoy Your Environment · Get Back To Having Fun</p>
-    <h2><a href="tel:4803664499">(480) 366-4499</a></h2>
-  </div>
-</section>
+      <section className="hero text-white text-center d-flex align-items-center justify-content-center" style={{ 
+        backgroundImage: "url('/deck_cover.jpeg')", 
+        backgroundSize: 'cover', 
+        backgroundPosition: 'center', 
+        height: '75vh' 
+      }}>
+        <div>
+          <h1 className="display-3 fw-bold">Make Your Pool Deck Beautiful Again</h1>
+          <p className="lead">Serving Phoenix and Surrounding Areas – ROC #302336 #328149</p>
+          <p className="mb-3">Fix The Damage · Enjoy Your Environment · Get Back To Having Fun</p>
+          <h2><a href="tel:4803664499">(480) 366-4499</a></h2>
+        </div>
+      </section>
 
-<section className="bg-primary text-white text-center py-5">
-  <div className="container d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
-    <h2 className="mb-0">Get A Free, No Obligation Quote</h2>
-    <a href="/quote" className="btn btn-light btn-lg text-dark">GET A QUOTE</a>
-  </div>
-</section>
+      <section className="bg-primary text-white text-center py-5">
+        <div className="container d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+          <h2 className="mb-0">Get A Free, No Obligation Quote</h2>
+          <a href="/quote" className="btn btn-light btn-lg text-dark">GET A QUOTE</a>
+        </div>
+      </section>
 
 
-{/* Welcome Section */}
-<section className="bg-white py-5">
-  <div className="container d-flex flex-column flex-lg-row align-items-center justify-content-between">
-    <div className="text-content mb-4 mb-lg-0 me-lg-5">
-      <h2 className="fw-bold">Welcome To Altra Cool Deck, LLC</h2>
-      <p className="text-primary fs-6">
-        Local family owned Pool Deck Contractor serving Phoenix Arizona and surrounding areas.
-      </p>
-      <p style={{ marginBottom: '10px' }}>
-        At Altra Pool Deck, LLC, we specialize in transforming worn-out pool decks into stunning backyard retreats. If your cool deck is cracked, chipped, stained, or simply outdated, it can take away from the enjoyment and beauty of your outdoor space. That’s where we come in.
-      </p>
+      {/* Welcome Section */}
+      <section className="bg-white py-5">
+        <div className="container d-flex flex-column flex-lg-row align-items-center justify-content-between">
+          <div className="text-content mb-4 mb-lg-0 me-lg-5">
+            <h2 className="fw-bold">Welcome To Altra Cool Deck, LLC</h2>
+            <p className="text-primary fs-6">
+              Local family owned Pool Deck Contractor serving Phoenix Arizona and surrounding areas.
+            </p>
+            <p style={{ marginBottom: '10px' }}>
+              At Altra Pool Deck, LLC, we specialize in transforming worn-out pool decks into stunning backyard retreats. If your cool deck is cracked, chipped, stained, or simply outdated, it can take away from the enjoyment and beauty of your outdoor space. That’s where we come in.
+            </p>
 
-      <p style={{ marginBottom: '10px' }}>
-        We offer expert concrete resurfacing services designed to restore and elevate your deck’s appearance. Whether you're dealing with damage or just want a fresh look, our decorative coatings—like knockdown finishes and stamped overlays—deliver lasting beauty and durability.
-      </p>
+            <p style={{ marginBottom: '10px' }}>
+              We offer expert concrete resurfacing services designed to restore and elevate your deck’s appearance. Whether you're dealing with damage or just want a fresh look, our decorative coatings—like knockdown finishes and stamped overlays—deliver lasting beauty and durability.
+            </p>
 
-      <p style={{ marginBottom: '30px' }}>
-        Every project comes with a 3 to 5 year warranty, and we offer flexible financing options to fit your budget. Let us help you create a poolside space you’ll love spending time in.
-      </p>
-      <Link href="/quote" className="btn btn-primary">
-        GET AN INSTANT QUOTE
-      </Link>
-    </div>
-    <div className="image-content">
-      <img src="/family-pool.jpg" alt="Family at pool" className="img-fluid rounded shadow" 
-      style={{ maxWidth: '400px', height: 'auto' }}/>
-    </div>
-  </div>
-</section>
+            <p style={{ marginBottom: '30px' }}>
+              Every project comes with a 3 year warranty, and we offer flexible financing options to fit your budget. Let us help you create a poolside space you’ll love spending time in.
+            </p>
+            <Link href="/quote" className="btn btn-primary">
+              GET AN INSTANT QUOTE
+            </Link>
+          </div>
+          <div className="image-content">
+            <img src="/family-pool.jpg" alt="Family at pool" className="img-fluid rounded shadow" 
+            style={{ maxWidth: '400px', height: 'auto' }}/>
+          </div>
+        </div>
+      </section>
 
       {/* Services Section */}
       <section className="services py-5">
@@ -133,8 +131,7 @@ export default function Home() {
           <a href="/contact" className="btn btn-primary">Contact Us</a>
         </div>
       </section>
-
-      <Footer />
     </div>
-  );
-}
+    </>
+    );
+  }

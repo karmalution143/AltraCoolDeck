@@ -4,18 +4,20 @@ import Footer from '../components/Footer';
 
 export default function About() {
   return (
+    <>
+      <SEO
+        title="About Us | Altra Cool Deck"
+        description="Discover the mission and team behind Altra Cool Deck. Decades of experience in pool resurfacing."
+        image="https://altra-cool-deck.vercel.app/link_preview.jpg"
+        url="https://altra-cool-deck.vercel.app/"
+      />
     <div>
-      <Head>
-        <title >About Altra Cool Deck, LLC | Phoenix Pool Deck Experts</title>
-        <meta name="description" content="Learn about Altra Cool Deck, LLC – Arizona’s trusted pool deck resurfacing company serving Phoenix and beyond for over 15 years." />
-      </Head>
-
       <section className="bg-primary text-white text-center py-5">
-  <div className="container d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
-    <h2 className="mb-0">Get A Free, No Obligation Quote</h2>
-    <a href="/quote" className="btn btn-light btn-lg text-dark">GET A QUOTE</a>
-  </div>
-</section>
+        <div className="container d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+          <h2 className="mb-0">Get A Free, No Obligation Quote</h2>
+          <a href="/quote" className="btn btn-light btn-lg text-dark">GET A QUOTE</a>
+        </div>
+      </section>
 
 
       <section className="bg-light py-5">
@@ -60,8 +62,7 @@ export default function About() {
           
         </div>
       </section>
-
-      <Footer />
     </div>
+    </>
   );
 }
