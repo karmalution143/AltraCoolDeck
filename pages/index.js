@@ -25,9 +25,13 @@ useEffect(() => {
 
   return (
       <>
-      <SEO/>
+      <SEO
+      title="About Us | Altra Cool Deck"
+      description="We repair, resurface, and restore pool decks across Arizona. Free quotes, durable finishes."
+      image="https://altra-cool-deck.vercel.app/link_preview.jpg"
+      url="https://altra-cool-deck.vercel.app/"/>
+      
       <div>
-
       {/* Hero Section */}
       <section className="hero text-white text-center d-flex align-items-center justify-content-center" style={{ 
         backgroundImage: "url('/deck_cover.jpeg')", 

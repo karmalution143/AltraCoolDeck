@@ -7,7 +7,7 @@ export default function About() {
   return (
     <>
       <SEO
-        title="About Us | Altra Cool Deck"
+        title="Pool Deck Resurfacing in Phoenix | Altra Cool Deck"
         description="Discover the mission and team behind Altra Cool Deck. Decades of experience in pool resurfacing."
         image="https://altra-cool-deck.vercel.app/link_preview.jpg"
         url="https://altra-cool-deck.vercel.app/"
