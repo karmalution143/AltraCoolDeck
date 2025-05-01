@@ -18,9 +18,6 @@ const Navbar = () => {
         <Link href="/testimonials">Testimonials</Link>
         <Link href="/image-gallery">Image Gallery</Link>
       </nav>
-      <div className={styles.contact}>
-        <p>Call us: (480) 366-4499</p>
-      </div>
     </header>
   );
 };

@@ -2,37 +2,50 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="footer bg-dark text-light py-4">
+    <footer className="bg-dark text-light pt-5 pb-3">
       <div className="container">
-        <div className="row">
-          {/* Logo and Company Name */}
-          <div className="col-md-6">
-            <img src="/logo.png" alt="Altra Cool Deck" className="footer-logo mb-2" />
-            <p>Altra Cool Deck, LLC</p>
+        {/* Top row: logo and info */}
+        <div className="row gy-4">
+          {/* Left: Logo + Service Areas */}
+          <div className="col-12 col-md-6 text-center text-md-start">
+            <img
+              src="/OR-Logo.svg"
+              alt="Altra Cool Deck Logo"
+              style={{ maxWidth: '330px' }}
+              className="mb-3"
+            />
+            <p className="small mb-0 pe-md-5" style={{ maxWidth: '500px' }}>
+              Chandler · Mesa · Tempe · Scottsdale · Ahwatukee · Gilbert · Glendale · Goodyear · Queen Creek · Gold Canyon · Carefree · Avondale · Paradise Valley · Peoria
+            </p>
           </div>
 
-          {/* Areas Served */}
-          <div className="col-md-6">
-            <p><strong>Serving Areas:</strong></p>
-            <p>Chandler • Mesa • Tempe • Scottsdale • Ahwatukee • Gilbert • Glendale • Goodyear • Queen Creek • Gold Canyon • Carefree • Avondale • Paradise Valley • Peoria</p>
+          {/* Right: Contact */}
+          <div className="col-12 col-md-6 mt-4 text-center text-md-start ps-md-5">
+            <p className="mb-1 fw-bold">Contact Us</p>
+            <p className="mb-1">
+              📞 <a href="tel:4803664499" className="text-light text-decoration-none">(480) 366-4499</a>
+            </p>
+            <p className="mb-1">
+              📧 <a href="mailto:joyce@altracooldeck.com" className="text-light text-decoration-none">joyce@altracooldeck.com</a>
+            </p>
+            <p className="mb-1"><strong>Sales Hours:</strong> Mon–Fri 7AM–4PM (EXT 702)</p>
+            <p className="mb-0"><strong>Office Hours:</strong> Mon–Sat 7AM–4PM (EXT 700)</p>
           </div>
         </div>
 
-        {/* Contact and Hours */}
-        <div className="row">
-          <div className="col-md-6">
-            <p><strong>Contact Us:</strong></p>
-            <p>Call Us: (480) 366-4499</p>
-            <p>Email: <a href="mailto:joyce@altracooldeck.com" className="text-light">joyce@altracooldeck.com</a></p>
-            <p><strong>Sales Hours:</strong> Mon–Fri: 07:00 AM to 04:00 PM (EXT 702)</p>
-            <p><strong>Office Hours:</strong> Mon–Sat: 07:00 AM to 04:00 PM (EXT 700)</p>
+        {/* Bottom row: legal/credits */}
+        <div className="border-top border-secondary mt-4 pt-3 row text-center text-md-between align-items-center">
+          <div className="col-12 col-md-6 mb-2 mb-md-0">
+            <small>&copy; {new Date().getFullYear()} Altra Cool Deck, LLC</small>
           </div>
-
-          {/* Footer Bottom Section */}
-          <div className="col-md-6 text-md-end">
-            <p>Copyright © 2025 Altra Cool Deck, LLC</p>
-            <Link href="/privacy-policy" className="text-light">Privacy Policy</Link>
-            <p className="mt-2">Website Design and Marketing By <a href="https://onemissionmedia.com" target="_blank" rel="noopener noreferrer" className="text-light">One Mission Media LLC</a></p>
+          <div className="col-12 col-md-6">
+            <small>
+              <Link href="/privacy-policy" className="text-light me-3 text-decoration-underline">Privacy Policy</Link>
+              Website by{' '}
+              <a href="https://onemissionmedia.com" target="_blank" rel="noopener noreferrer" className="text-light text-decoration-underline">
+                One Mission Media LLC
+              </a>
+            </small>
           </div>
         </div>
       </div>

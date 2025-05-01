@@ -8,9 +8,19 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.logo {
+  flex: 1;
+  padding-left: 20px
+}
+
+.logoImg {
+  height: 75px;
+}
+
 .navLinks {
   display: flex;
-  gap: 25px;
+  gap: 35px;
+  padding-right: 40px;
 }
 
 .navLinks a {
