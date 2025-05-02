@@ -34,17 +34,20 @@ const Footer = () => {
         </div>
 
         {/* Bottom row: legal/credits */}
-        <div className="border-top border-secondary mt-4 pt-3 row text-center text-md-between align-items-center">
-          <div className="col-12 col-md-6 mb-2 mb-md-0">
+        <div className="border-top border-secondary mt-4 pt-3 row text-center text-md-start align-items-center">
+          <div className="col-12 col-md-4 mb-2 mb-md-0">
             <small>&copy; {new Date().getFullYear()} Altra Cool Deck, LLC</small>
           </div>
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-4 mb-2 mb-md-0">
+            <Link href="/privacy-policy" className="text-light text-decoration-underline">Privacy Policy</Link>
+          </div>
+          <div className="col-12 col-md-4">
             <small>
-              <Link href="/privacy-policy" className="text-light me-3 text-decoration-underline">Privacy Policy</Link>
-              Website by{' '}
+              Original design by{' '}
               <a href="https://onemissionmedia.com" target="_blank" rel="noopener noreferrer" className="text-light text-decoration-underline">
                 One Mission Media LLC
-              </a>
+              </a><br />
+              Rebuilt and maintained by Tiffany Locicero.
             </small>
           </div>
         </div>

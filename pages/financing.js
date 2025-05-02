@@ -38,7 +38,7 @@ export default function Financing() {
       <section className="bg-primary text-white text-center py-5">
         <div className="container d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
           <h2 className="mb-0">Get A Free, No Obligation Quote</h2>
-          <a href="/quote" className="btn btn-light btn-lg text-dark">GET A QUOTE</a>
+          <a href="/contact" className="btn btn-light btn-lg text-dark">GET A QUOTE</a>
         </div>
       </section>
 
@@ -60,7 +60,7 @@ export default function Financing() {
               Closed-end is set on a fixed term of 12–144 months, so the payment amount is based on
               the APR and term.
             </p>
-            <img src="/ffc-logo.webp" alt="FFC Financing" style={{ maxWidth: '170px', margin: '30px auto', display: 'block' }} />
+            <img src="../financing/ffc-logo.webp" alt="FFC Financing" style={{ maxWidth: '170px', margin: '30px auto', display: 'block' }} />
             <a
               href="https://portal.foundationfinance.com/links/X1ru2Jg9j95C4nHJ1ovY4iNN73EV9ykrsmLBCr3himg="
               target="_blank"

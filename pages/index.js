@@ -8,6 +8,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import SEO from '../components/SEO'
 import ReviewCarousel from '../components/ReviewCarousel';
+import FinancingSection from '../components/FinancingSection';
 
 export default function Home() {
 
@@ -26,7 +27,7 @@ useEffect(() => {
   return (
       <>
       <SEO
-      title="About Us | Altra Cool Deck"
+      title="Home | Altra Cool Deck"
       description="We repair, resurface, and restore pool decks across Arizona. Free quotes, durable finishes."
       image="https://altra-cool-deck.vercel.app/link_preview.jpg"
       url="https://altra-cool-deck.vercel.app/"/>
@@ -148,6 +149,8 @@ useEffect(() => {
           <a href="/contact" className="btn btn-primary">Contact Us</a>
         </div>
       </section>
+
+      <FinancingSection />
     </div>
     </>
     );

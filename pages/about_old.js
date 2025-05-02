@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import SEO from '../components/SEO';
+import Footer from '../components/Footer';
+import SEO from '../components/SEO'
 
 export default function About() {
   return (
@@ -71,71 +72,23 @@ export default function About() {
               </p>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Arizona Sunset Divider */}
-      <section style={{
-        backgroundImage: "url('/joyce_mountains.jpeg')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center 42%',
-        height: '300px',
-      }} className="w-100 my-5 shadow">
-        <div className="text-center text-white d-flex h-100 align-items-center justify-content-center" style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}>
-          <h2 className="display-6">Built for Arizona. Inspired by it.</h2>
-        </div>
-      </section>
-
-      {/* Personal Section */}
-      <section className="bg-white py-5">
-        <div className="container">
-          <div className="row align-items-center flex-column-reverse flex-md-row">
-            <div className="col-md-6">
-              <h2 className="h4">Why We Do What We Do</h2>
+          {/* Personal Section */}
+          <div className="row align-items-center mt-5">
+            <div className="col-md-6 order-2 order-md-1 mt-4 mt-md-0">
+              <h2 className="h4">Our Work Is Personal</h2>
               <p>
-                At Altra Cool Deck, we don’t just resurface pool decks—we restore the spaces where Arizona families make their best memories. Michael, our founder, lives what we build. Whether it’s relaxing in the pool with his dog or enjoying a backyard evening with loved ones, he knows what quality outdoor living feels like. And that’s exactly what we want to deliver for you.
-              </p>
-              <p className="fst-italic text-muted mt-3">
-                “This is what Arizona living should feel like.” – Michael
+                At Altra Cool Deck, we don’t just resurface pool decks—we restore the spaces where Arizona families make their best memories. Michael, our founder, lives what we build. Whether it’s relaxing in the pool with his dog or enjoying a backyard evening, he knows what quality outdoor living feels like. And that’s exactly what we want to deliver for you.
               </p>
             </div>
-            <div className="col-md-6 text-center mb-4 mb-md-0">
+            <div className="col-md-6 order-1 order-md-2 text-center">
               <Image 
-                src="/family_pool.jpeg" 
-                alt="Michael and family in pool with dog" 
-                width={600} 
-                height={400} 
+                src="/Michael_Pool.jpg" 
+                alt="Michael Locicero relaxing in pool with dog" 
+                width={350} 
+                height={200} 
                 className="img-fluid rounded shadow" 
               />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Before and After Section */}
-      <section className="bg-light py-5">
-        <div className="container">
-          <h2 className="text-center mb-4">See the Difference Altra Cool Deck Makes</h2>
-          <div className="row">
-            <div className="col-md-6 text-center mb-4">
-              <Image 
-                src="/before.jpg" 
-                alt="Before pool deck resurfacing" 
-                width={500} 
-                height={300} 
-                className="img-fluid rounded shadow" 
-              />
-              <p className="text-muted mt-2">Before</p>
-            </div>
-            <div className="col-md-6 text-center mb-4">
-              <Image 
-                src="/after.jpg" 
-                alt="After pool deck resurfacing" 
-                width={500} 
-                height={300} 
-                className="img-fluid rounded shadow" 
-              />
-              <p className="text-muted mt-2">After</p>
             </div>
           </div>
         </div>
@@ -145,7 +98,7 @@ export default function About() {
       <section className="bg-white py-5">
         <div className="container text-center">
           <blockquote className="blockquote mb-4 fs-5 fw-light">
-            "I had a great experience with Altra Cool Deck from beginning to end... The pool deck looks awesome. The price was fair and service excellent. I highly recommend Altra Cool Deck."
+            "I had a great experience with Altra Cool Deck from beginning to end. The office staff when I initially called were great. The owner, Michael, came out and personally explained my options and gave me a quote. No high pressure sales talk, which I appreciated as we are fairly new to the desert and I had no idea how to care for a pool deck or what was needed. The team that actually did the deck coating were fabulous. They took great care to protect my pool, spa and plants. It is unusual to have a construction project done without at least some damage to plants or other frustrating issues. There were no problems. The pool deck looks awesome. The price was fair and service excellent. I highly recommend Altra Cool Deck."
           </blockquote>
           <footer className="blockquote-footer text-muted mb-4">
             Maria M. <cite title="Scottsdale, AZ">Scottsdale, AZ</cite>
