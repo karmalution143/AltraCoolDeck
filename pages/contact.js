@@ -68,13 +68,15 @@ export default function Contact() {
 
         {/* Info Section */}
         <div className="col-md-5">
-          <div className="border-start ps-5 mt-5">
+          <div className="border-start ps-5 mt-0 mt-md-4 mt-lg-5">
           <p>
             <strong>Phone:</strong>{' '}
             <a href="tel:4803664499" className="link-contact">
               (480) 366-4499
             </a>
           </p>
+          <p className="mb-1">Sales Ext 702</p>
+          <p>Office Ext 700</p>
 
           <p>
             <strong>Email:</strong>{' '}
