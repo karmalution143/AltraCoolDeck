@@ -42,11 +42,12 @@ useEffect(() => {
         <div>
           <h1 className="display-3 fw-bold">Make Your Pool Deck Beautiful Again</h1>
           <p className="lead">Serving Phoenix and Surrounding Areas – ROC #302336 #328149</p>
-          <p className="mb-3">Fix The Damage · Enjoy Your Environment · Get Back To Having Fun</p>
+          <p className="mb-0">Fix The Damage · Enjoy Your Environment</p><p>Get Back To Having Fun</p>
           <h2><a href="tel:4803664499">(480) 366-4499</a></h2>
         </div>
       </section>
 
+      {/* Call to Action Section */}
       <section className="bg-primary text-white text-center py-5">
         <div className="container d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
           <h2 className="mb-0">Get A Free, No Obligation Quote</h2>

@@ -11,10 +11,10 @@ export default function Contact() {
             <div className="mb-3">
               <label className="form-label">Name <span className="text-danger">*</span></label>
               <div className="row">
-                <div className="col">
+                <div className="col-12 col-md-6 mb-3 mb-md-0">
                   <input type="text" className="form-control" placeholder="First Name" required />
                 </div>
-                <div className="col">
+                <div className="col-12 col-md-6">
                   <input type="text" className="form-control" placeholder="Last Name" />
                 </div>
               </div>

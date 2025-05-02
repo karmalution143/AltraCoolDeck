@@ -77,6 +77,26 @@ export default function About() {
           
         </div>
       </section>
+      {/* Testimonial Section */}
+            <section className="bg-white py-5">
+              <div className="container text-center">
+                <blockquote className="blockquote mb-4 fs-5 fw-light">
+                "I had a great experience with Altra Cool Deck from beginning to end. The office staff when I initially called were great. The owner, Michael, came out and personally explained my options and gave me a quote. No high pressure sales talk, which I appreciated as we are fairly new to the desert and I had no idea how to care for a pool deck or what was needed. The team that actually did the deck coating were fabulous. They took great care to protect my pool, spa and plants. It is unusual to have a construction project done without at least some damage to plants or other frustrating issues. There were no problems. The pool deck looks awesome. The price was fair and service excellent. I highly recommend Altra Cool Deck."
+                </blockquote>
+                <footer className="blockquote-footer text-muted mb-4">
+                  Maria M. <cite title="Scottsdale, AZ">Scottsdale, AZ</cite>
+                </footer>
+                <div className="d-flex justify-content-center">
+                  <Image
+                    src="/testimonial1.jpg"
+                    alt="Maria M. from Scottsdale"
+                    width={100}
+                    height={100}
+                    className="rounded-circle shadow"
+                  />
+                </div>
+              </div>
+            </section>
     </div>
     </>
   );
