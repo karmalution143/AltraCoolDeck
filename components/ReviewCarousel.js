@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 
 export default function ReviewCarousel({ reviews }) {
   return (
-    <section className="bg-white py-5">
+    <section className="bg-white py-4">
       <div className="container text-center">
         <h2 className="mb-2">Our Google Reviews</h2>
         <p className="text-muted mb-4">Rated by happy customers</p>

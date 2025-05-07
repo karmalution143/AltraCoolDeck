@@ -9,6 +9,7 @@ import 'aos/dist/aos.css';
 import SEO from '../components/SEO'
 import ReviewCarousel from '../components/ReviewCarousel';
 import FinancingSection from '../components/FinancingSection';
+import BeforeAfterGallery from '../components/BeforeAfterGallery';
 
 export default function Home() {
 
@@ -38,8 +39,7 @@ useEffect(() => {
         backgroundImage: "url('/deck_cover.jpeg')", 
         backgroundSize: 'cover', 
         backgroundPosition: 'center', 
-        height: '75vh' 
-      }}>
+        height: '75vh' }}>
         <div>
           <h1 className="display-3 fw-bold">Make Your Pool Deck Beautiful Again</h1>
           <p className="lead">Serving Phoenix and Surrounding Areas – ROC #302336 #328149</p>
@@ -141,16 +141,17 @@ useEffect(() => {
         </div>
       </section>
 
+      <BeforeAfterGallery />
+      <FinancingSection />
+
       {/* Contact Section */}
-      <section className="contact py-5">
+      <section className="contact bg-light py-4">
         <div className="container text-center">
           <h2 className="mb-4">Get In Touch</h2>
           <p>If you're ready to get started or have any questions, don't hesitate to reach out. We're here to help!</p>
           <a href="/contact" className="btn btn-primary">Contact Us</a>
         </div>
       </section>
-
-      <FinancingSection />
     </div>
     </>
     );

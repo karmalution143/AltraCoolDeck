@@ -41,12 +41,12 @@ const Navbar = () => {
       <nav className={`${styles.navLinks} ${menuOpen ? styles.showMenu : ''}`}>
         <Link href="/" onClick={closeMenu}>Home</Link>
         <Link href="/about" onClick={closeMenu}>About</Link>
-        <Link href="/commercial" onClick={closeMenu}>Commercial</Link>
         <Link href="/financing" onClick={closeMenu}>Financing</Link>
+        <Link href="/commercial" onClick={closeMenu}>Commercial</Link>
         <Link href="/concrete" onClick={closeMenu}>Concrete</Link>
         <Link href="/contact" onClick={closeMenu}>Contact</Link>
         <Link href="/testimonials" onClick={closeMenu}>Testimonials</Link>
-        <Link href="/image-gallery" onClick={closeMenu}>Image Gallery</Link>
+        <Link href="/gallery" onClick={closeMenu}>Gallery</Link>
       </nav>
     </header>
   );

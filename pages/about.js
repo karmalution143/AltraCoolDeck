@@ -42,22 +42,35 @@ export default function About() {
             Serving Phoenix & Surrounding Areas — ROC #302336
           </p>
 
-          <div className="row mt-5 align-items-center">
-            <div className="col-lg-10 mx-auto">
-              <h2 className="h4">Our Expertise in Arizona Cool Deck Resurfacing</h2>
-              <p style={{ marginBottom: '50px' }}>
-                Arizona Cool deck resurfacing is a specialized art. If the cool deck replacement is not mixed perfectly, the bonding that needs to take place will not occur. The precise mixture that has to be used is a combination of the additive and aggregate combined just right that will allow the bonding to take place and will last for many years. Because temperature and humidity levels change throughout the year, the mixture will change. Our employees have been doing this most of their lives and have mastered the art of concrete adhesion. Our 3-year warranties are the longest in the industry. When we restore your pool deck you can expect the craftsmanship will last for many years beyond the warranty.
-              </p>
+          <div className="row align-items-center mb-5">
+            <div className="col-md-6">
+              <h2 className="h3 fw-bold mb-3">Arizona’s Pool Deck Specialists</h2>
+              <p>At Altra Cool Deck, we don’t just resurface pool decks—we restore the heart of your backyard. With decades of experience behind us, we specialize exclusively in <strong>acrylic lace coatings</strong>, a durable, slip-resistant solution built for the harsh Arizona sun.</p>
+              <p>We’ve mastered the technique of cool deck resurfacing, where every job requires a precise balance of materials, skill, and timing. Arizona’s climate can wreak havoc on concrete surfaces—but with our expertly mixed coatings and seasoned installers, your deck won’t just look better—it’ll <em>last</em>.</p>
+            </div>
+            <div className="col-md-6 text-center">
+              <Image src="/deck_cover.jpeg" width={600} height={400} alt="Altra Cool Deck sample project" className="rounded shadow" />
             </div>
           </div>
 
+          <div className="mb-5 mb-md-0 d-flex justify-content-center">
+            <h2 className="h4 fw-bold mb-3">What Sets Us Apart</h2>
+            <ul>
+              <li><strong>Local Experts:</strong> Arizona born and raised. We get your climate.</li>
+              <li><strong>Acrylic Only:</strong> No epoxy. No shortcuts. Just perfect pool decks.</li>
+              <li><strong>Transparent Pricing:</strong> No hidden fees. Ever.</li>
+              <li><strong>Warrantied Workmanship:</strong> 3-year coverage—longest in the industry.</li>
+              <li><strong>Decades of Experience:</strong> Our crews are seasoned professionals.</li>
+            </ul>
+          </div>
+
           <div className="row align-items-center mt-4">
-            <div className="col-md-6 mb-4 mb-md-0">
+            <div className="col-md-6 mb-4 mb-md-0 d-flex justify-content-center">
               <Image 
                 src="/Michael_Locicero.jpg" 
                 alt="Michael Locicero, Owner of Altra Cool Deck" 
-                width={500} 
-                height={500} 
+                width={300} 
+                height={300} 
                 className="img-fluid rounded shadow" 
               />
             </div>
