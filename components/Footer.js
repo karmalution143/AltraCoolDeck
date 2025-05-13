@@ -47,7 +47,7 @@ const Footer = () => {
               <a href="https://onemissionmedia.com" target="_blank" rel="noopener noreferrer" className="text-light text-decoration-underline">
                 One Mission Media LLC
               </a><br />
-              Rebuilt and maintained by Tiffany Locicero.
+              Rebuilt and maintained by TML Digital Solutions.
             </small>
           </div>
         </div>

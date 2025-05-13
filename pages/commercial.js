@@ -2,6 +2,29 @@ import Image from 'next/image';
 
 export default function CommercialProjects() {
   return (
+<>
+    {/* Hero Section */}
+    <section className="hero text-white text-center d-flex align-items-center justify-content-center" style={{ 
+      backgroundImage: "url('/commercial/stonecreek.jpeg')", 
+      backgroundSize: 'cover', 
+      backgroundPosition: 'center', 
+      height: '75vh' 
+    }}>
+      <div>
+        <h1 className="display-3 fw-bold">Commercial Projects</h1>
+        <h2><a href="tel:4803664499">(480) 366-4499</a></h2>
+      </div>
+    </section>
+
+    {/* Quote Banner */}
+    <section className="bg-primary text-white text-center py-5">
+        <div className="container d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+          <h2 className="mb-0">Get A Free, No Obligation Quote</h2>
+          <a href="/quote" className="btn btn-light btn-lg text-dark">GET A QUOTE</a>
+        </div>
+      </section>
+    
+    {/* Commerical Section */}
     <section className="container my-5">
       <h1 className="text-center mb-4 fw-bold">Commercial Pool Deck Projects</h1>
 
@@ -70,5 +93,6 @@ export default function CommercialProjects() {
         </a>
       </div>
     </section>
+    </>
   );
 }

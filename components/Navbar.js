@@ -43,9 +43,7 @@ const Navbar = () => {
         <Link href="/about" onClick={closeMenu}>About</Link>
         <Link href="/financing" onClick={closeMenu}>Financing</Link>
         <Link href="/commercial" onClick={closeMenu}>Commercial</Link>
-        <Link href="/concrete" onClick={closeMenu}>Concrete</Link>
         <Link href="/contact" onClick={closeMenu}>Contact</Link>
-        <Link href="/testimonials" onClick={closeMenu}>Testimonials</Link>
         <Link href="/gallery" onClick={closeMenu}>Gallery</Link>
       </nav>
     </header>
